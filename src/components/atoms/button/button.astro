@@ -1,0 +1,21 @@
+---
+import "./button.css"
+
+interface Props {
+    text: string;
+    textColor: string;
+    bgColor: string;
+    borderColor: string;
+    
+}
+
+const { text, textColor, bgColor, borderColor } = Astro.props;
+---
+
+<button
+    class={`${textColor} ${bgColor} ${borderColor} 
+    transition-all duration-300
+    border-2 rounded-[10px]`}
+>
+    {text}
+</button>
