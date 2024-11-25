@@ -1,0 +1,49 @@
+---
+import Button from "../atoms/button/button.astro";
+
+---
+
+<section class="hero flex flex-col justify-center 
+    md:flex-row md:items-center
+    gap-12">
+
+    <div class="text">
+
+        <p class="text-[20px]">Hello visitor</p>
+        <h1 class="text-[64px]">I'm Trilce Godoy</h1>
+        <h4 class="text-[32px]">Web developer</h4>
+        <p class="text-[20px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, ullam!</p>
+
+        <Button
+        className="see-my-work"
+        text="See my work" 
+        textColor="text-[--color-white]"
+        bgColor="bg-[--color-black]" 
+        borderColor="border-black"
+       
+        />
+
+        <Button
+            className="download-cv" 
+            text="Download CV" 
+            textColor="text-black"
+            bgColor="bg-white" 
+            borderColor="border-black"
+        />
+    </div>
+
+    <div>
+        <div class="image-box border-2 border-[--color-black] rounded-full p-10">
+            <img src="../../assets/tg-green.png" alt="">
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        height: 100vh;
+    }
+    .image-box {
+        width: 380px;
+    }
+</style>

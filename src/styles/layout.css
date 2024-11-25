@@ -1,7 +1,13 @@
 
 
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-green: #9DFFE9;
+}
+
 body {
-    background: #202020;
-    color: whitesmoke;
-    
+    background: var(--color-white);
+    color: var(--color-black);
+    font-family: "Karla", sans-serif;
 }

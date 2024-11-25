@@ -1,7 +1,7 @@
 ---
-import "./button.css"
-
+import "../button/button.css"
 interface Props {
+    className: string;
     text: string;
     textColor: string;
     bgColor: string;
@@ -9,13 +9,14 @@ interface Props {
     
 }
 
-const { text, textColor, bgColor, borderColor } = Astro.props;
+const { className, text, textColor, bgColor, borderColor } = Astro.props;
 ---
 
 <button
-    class={`${textColor} ${bgColor} ${borderColor} 
+    class={`${className} ${textColor} ${bgColor} ${borderColor}
+    px-[0.9rem] py-[0.3rem]  
     transition-all duration-300
-    border-2 rounded-[10px]`}
+    border-2 rounded-[8px]`}
 >
     {text}
 </button>

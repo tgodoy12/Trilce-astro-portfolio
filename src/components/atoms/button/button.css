@@ -1,7 +1,9 @@
-button:hover {
-    background-color: aqua;
+.see-my-work:hover {
+    background-color: var(--color-green);
+    color: var(--color-black);
 }
 
-button {
-    padding: 0.5rem 0.7rem 
+.download-cv:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
